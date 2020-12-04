@@ -1,0 +1,86 @@
+.main{
+    position: relative;
+    min-height: 806px;
+    opacity: 0.98;
+    background-color: #eff0f2;
+    padding-top: 64px;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        font-family: 'Montserrat';
+        display: block;
+        width: 113px;
+        height: 46px;
+        border: 5.6px solid #170f1c;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #000000;
+        text-align: center;
+        padding-top: 5px;
+        span{
+            font-size: 21px;
+            color: #77efe5;
+        }
+        
+    }
+    &__burger{
+        display: block;
+        width: 34px;
+        height: 24px;
+        span{
+            display: block;
+            width: 30px;
+            height: 4px;
+            opacity: 0.6;
+            background-color: #000000;
+            border-radius: 1.5px;
+            margin-bottom: 5px;
+        }
+    }
+    &__descr{
+        margin-top: 195px;
+        text-align: center;
+        text-shadow: 4px 8px 10px rgba(0,0,0,0.23),10px 20px 5px rgba(0,0,0,0.05);
+        font-family: 'Montserrat';
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #505050;
+        margin-bottom: 150px;
+        span{
+            display: inline-block;
+            background-color: #a3deda;
+            width: 255px;
+            height: 54px;
+        }
+    }
+    &__btn{
+        display: block;
+        width: 232px;
+        height: 53px;
+        opacity: 0.5;
+        border: 2px solid #000000;
+        border-radius: 2px;
+        margin: 0 auto;
+        opacity: 0.74;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #000000;
+    }
+    &__icon{
+        position: absolute;
+        display: block;
+        right: 20%;
+    }
+}

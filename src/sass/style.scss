@@ -1,0 +1,12 @@
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box;
+}
+@import 'blocks/main';
+@import 'blocks/about';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/works';

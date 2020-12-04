@@ -1,0 +1,16 @@
+.works{
+    padding-top: 129px;
+    min-height: 1166px;
+    &__wrapper{
+        margin-top: 122px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__items{
+        display: block;
+    }
+    .mt{
+        margin-top: 13px;
+    }
+}

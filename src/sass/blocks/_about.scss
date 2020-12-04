@@ -1,0 +1,45 @@
+.about{
+    padding-top: 128px;
+    min-height: 985px;
+    background-color: #f8fafa;
+    &__wrapper{
+        margin-top: 152px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        z-index: 1;
+    }
+    &__descr{
+        width: 42%;
+    }
+    &__title{
+        opacity: 0.74;
+        font-family: 'Merriweather';
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #000000;
+        margin-bottom: 31px;
+    }
+    &__text{
+        opacity: 0.74;
+        font-family: 'Raleway';
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-bottom: 38px;
+    }
+    &__block{
+        position: absolute;
+        width: 479px;
+        height: 412px;
+        background-color: #eff0f2;
+        z-index: -1;
+        left: 23px;
+        top: 35px;
+    }
+   
+}
