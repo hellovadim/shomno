@@ -1,0 +1,53 @@
+.services{
+    min-height: 1618px;
+    padding-top: 124px;
+    background-color: #f9fbfb;
+    &__wrapper{
+        margin-top: 110px;
+    }
+    &__blocks{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 13px;
+    }
+    &__items{
+        padding-top: 130px;
+        padding-left: 65px;
+    }
+.big{
+    padding-right: 190px;
+    width: 652px;
+    height: 397px;
+    &_1{
+        background-image: url('../img/section_4/tea2.jpg');
+    }
+    &_2{
+        background-image: url('../img/section_4/pc.jpg')
+    }
+    &_3{
+        background-image: url('../img/section_4/cups.jpg')
+    }
+}   .small{
+    width: 474px;
+    height: 396px;
+    padding-right: 103px;
+    &_1{
+         background-image: url('../img/section_4/note.jpg');
+    }
+    &_2{
+        background-image: url('../img/section_4/office.jpg')
+    }
+    &_3{
+        background-image: url('../img/section_4/bottle.jpg');
+    }
+    }
+    &__title{
+        opacity: 0.94;
+        font-family: 'Merriweather';
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+    }
+}
