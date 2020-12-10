@@ -1,0 +1,18 @@
+.partners{
+    min-height: 387px;
+    padding-top: 108px;
+    &__block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link{
+        filter:brightness(5%);
+        opacity: 0.6;
+        transition: 0.2s all;
+        &:hover{
+        filter:brightness(100%);
+        opacity: 1;
+        }
+    }
+}

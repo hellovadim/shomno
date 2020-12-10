@@ -77,6 +77,14 @@
         text-transform: uppercase;
         letter-spacing: 0.12em;
         color: #000000;
+        transition: .2s linear;
+        cursor: pointer;
+        &:hover{
+            border: #6ef4e9;
+            background-color: #6ef4e9;
+            color: #505050;
+            text-decoration: underline;
+        }
     }
     &__icon{
         position: absolute;
