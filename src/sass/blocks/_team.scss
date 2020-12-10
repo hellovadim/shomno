@@ -1,0 +1,13 @@
+.team{
+    padding-top: 122px;
+    min-height: 1314px;
+    &__wrapper{
+        margin-top: 123px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .mt{
+        margin-top: 14px;
+    }
+}

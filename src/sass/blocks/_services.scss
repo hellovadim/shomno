@@ -13,6 +13,7 @@
     &__items{
         padding-top: 130px;
         padding-left: 65px;
+        position: relative;
     }
 .big{
     padding-right: 190px;
@@ -49,5 +50,46 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: #ffffff;
+    }
+    &__descr{
+        margin-top: 27px;
+        opacity: 0.9;
+        font-family: 'Raleway';
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+    }
+    &__toggle{
+        position: absolute;
+        bottom: 57px;
+        display: block;
+        opacity: 0.76;
+        font-family: 'Raleway';
+        font-size: 19px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.6s linear;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+            // text-decoration: underline;
+        }
+        &::after{
+            content: '';
+            display: block;
+            margin-top: 5px;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: 0.3s linear;
+        }
+        &:hover::after{
+            width: 100%;
+        }
     }
 }
