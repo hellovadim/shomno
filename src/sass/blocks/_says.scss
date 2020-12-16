@@ -3,42 +3,48 @@
     min-height: 923px;
     position: relative;
     background-color: #f9fbfb;
-    &__wrapper{
-        margin-top: 137px;
-        position: relative;
-    }
     &__slider{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding-top: 173px;
         position: relative;
-    }
-    &__descr{
-        width: 666px;
-        height: 362px;
-        background-color: #eaebed;
-        border-radius: 3px;
+       &-item{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+       
     }
     &__block{
+        position: relative;
+        z-index: 1;
+        img{
+            display: block;
+            width: 319px;
+            height: 410px;
+            z-index: 1;
+            margin-left: 37px;
+        }
+    
+    }
+    &__grey{
+        position: absolute;
+        top: 24px;
+        z-index: -1;
+        display: block;
         width: 393px;
         height: 362px;
         background-color: #ecedef;
         border-radius: 3px;
-        position: relative;
-    }
-    &__img{
-        display: block;
-        position: absolute;
-        width: 340px;
-        height: 410px;
-        top: -24px;
-        left: 27px;
     }
     &__descr{
+        width: 666px;
+        height: 362px;
+        background-color:#eaebed;
+        border-radius: 3px;
         padding-top: 101px;
         padding-left: 86px;
         padding-right: 76px;
     }
+    
     &__title{
         opacity: 0.94;
         font-family: 'Merriweather';
@@ -47,11 +53,13 @@
         letter-spacing: 0.06em;
         color: #000000;
         text-align: center;
+        text-transform: uppercase;
         span{
             font-size: 15px;
             font-weight: 400;
             color: #787878;
             font-style: oblique;
+            text-transform: uppercase;
         }
     }
     &__text{
@@ -66,10 +74,7 @@
         color: #000000;
         text-align: center;
     }
-    .fff{
-        font-size: 34px;
-        color: black;
-    }
+    
     &__stars{
         display: flex;
         justify-content: center;
@@ -80,9 +85,8 @@
         margin-right: 7px;
     }
     &__arrows{
-        position: absolute;
-        right: 0;
-        bottom: -100px;
+       display: flex;
+       justify-content: flex-end;
     }
     &__btn{
         width: 53px;
@@ -91,18 +95,18 @@
         box-shadow: 3px 7px 11px 0px rgba(19,19,21,0.65);
         border-radius: 3px;
         border: none;
-        bottom: -85px;
-        right: 159px;
         opacity: 0.3;
         transition: 0.2s ease;
         outline: none;
+        cursor: pointer;
         &:hover{
         background-color: #71f6eb;
         opacity: 0.67;
+        
         }
-    }
-    .prev{
-        margin-right: 30px;
+        &-prev{
+            margin-right: 29px;
+        }
     }
     .icon-chevron-left{
         font-size: 36px;
