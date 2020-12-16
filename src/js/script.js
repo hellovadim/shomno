@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', function(){
     // slider
+    let slideIndex = 0;
     let offset = 0;
 
     const slides = document.querySelectorAll('.says__slider-item'),
@@ -29,6 +30,14 @@ window.addEventListener('DOMContentLoaded', function(){
         }
 
         slidesField.style.transform = `translateX(-${offset}px)`;
+        
+        if (slideIndex == slides.length - 1) {
+            slideIndex = 0;
+        } else {
+            slideIndex++;
+        }
+        dots.forEach(dot => dot.style.backgroundColor = '#d0d0d0');
+        dots[slideIndex].style.backgroundColor = '#6eeee4'
 
     });
 
@@ -40,6 +49,14 @@ window.addEventListener('DOMContentLoaded', function(){
         }
 
         slidesField.style.transform = `translateX(-${offset}px)`;
+
+        if (slideIndex == 0) {
+            slideIndex = slides.length - 1;
+        } else {
+            slideIndex--;
+        }
+        dots.forEach(dot => dot.style.backgroundColor = '#d0d0d0');
+        dots[slideIndex].style.backgroundColor = '#6eeee4'
 
     });
     const indicators = document.createElement('ol'),
@@ -66,14 +83,10 @@ window.addEventListener('DOMContentLoaded', function(){
         background-color: #d0d0d0;
         border-radius: 3px;
         margin-right: 2px;
+        transition: .2s all;
         `;
         if (i == 0) {
-            dot.style.cssText =`
-            width: 11px;
-            height: 10px;
-            background-color: #71f6eb;
-            border-radius: 3px;
-            margin-right: 2px;`;
+            dot.style.backgroundColor = '#6eeee4'
         }
         indicators.append(dot);
         dots.push(dot);

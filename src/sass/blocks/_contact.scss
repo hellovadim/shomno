@@ -36,7 +36,12 @@
             font-weight: 400;
             color: #ffffff;
             outline: none;
-            opacity: .8;
+        }::placeholder{
+            font-family: 'Raleway';
+            font-size: 15px;
+            line-height: 51px;
+            font-weight: 400;
+            color: rgba($color: #fff, $alpha: .5);
         }
         textarea{
             margin-top: 23px;
@@ -46,7 +51,6 @@
             border-bottom: 1px solid rgba($color: #fff, $alpha: .4);
             resize: none;
             outline: none;
-            opacity: 0.6;
             font-family: 'Raleway';
             font-size: 15px;
             font-weight: 400;
