@@ -90,6 +90,42 @@ window.addEventListener('DOMContentLoaded', function(){
         }
         indicators.append(dot);
         dots.push(dot);
-    }
+    };
+
+    // Images
+
+    const imgPopup = document.createElement('div'),
+          workSection = document.querySelector('.works__wrapper'),
+          bigImage = document.createElement('img');
+
+    imgPopup.classList.add('popup', 'animated-show');
+    workSection.appendChild(imgPopup);
+
+    imgPopup.style.cssText = `
+    justify-content: center;
+    align-items: center;
+    display: none;`
+
+    bigImage.style.cssText = `
+    width: 40%;
+    height: 60%;`
+    
+    imgPopup.appendChild(bigImage);
+
+    workSection.addEventListener('click', (e)=>{
+
+        e.preventDefault();
+
+        let target = e.target;
+
+        if(target && target.classList.contains('works__img')){
+            imgPopup.style.display = 'flex';
+            const path = target.parentNode.getAttribute('href');
+            bigImage.setAttribute('src', path);
+        };
+        if (target && target.matches('div.popup')){
+            imgPopup.style.display = 'none';
+        };
+    })
 
 });

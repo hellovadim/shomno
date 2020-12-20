@@ -10,7 +10,23 @@
     &__items{
         display: block;
     }
+    &__link{
+        text-decoration: none;
+    }
     .mt{
         margin-top: 13px;
+    }
+    .popup{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .animated-show{
+        animation: show 0.3s linear;
     }
 }
