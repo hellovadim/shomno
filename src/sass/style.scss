@@ -8,6 +8,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
+@import 'blocks/hide-menu';
 @import 'blocks/main';
 @import 'blocks/about';
 @import 'blocks/title';

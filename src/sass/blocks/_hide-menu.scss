@@ -1,0 +1,14 @@
+.hide__menu{
+   position: absolute;
+   display: none;
+   z-index: 1;
+   right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .8);
+    transition: 0.5s all;
+    &-active{
+        display: block;
+        
+    }
+}

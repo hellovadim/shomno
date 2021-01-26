@@ -2,7 +2,89 @@
     min-height: 1618px;
     padding-top: 124px;
     background-color: #f9fbfb;
-    
+    &__wrapper{
+        margin-top: 123px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        position: relative;
+        display: flex;
+        width: 652px;
+        height: 422px;
+        overflow: hidden;
         
-
+        
+    }
+    &__font{
+        display: none;
+        width: 100%;
+        height: 422px;
+        padding-top: 165px;
+        padding-left: 65px;
+        &-1{
+            background: url('../img/section_4/tea2.jpg') center (center/cover) no-repeat;
+        }
+        &-2{
+            background: url('../img/section_4/note.jpg') center (center/cover) no-repeat;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background:rgba($color: black, $alpha: 0.6);
+            width: 652px;
+            height: 422px;
+            top: 0;
+            left: 0;
+        } 
+    }
+    &__title{
+        opacity: 0.94;
+        font-family: 'Merriweather';
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+    }
+    &__text{
+        opacity: 0.9;
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+    }
+    &__toggle{
+        opacity: 0.76;
+        font-family: 'Raleway';
+        font-size: 19px;
+        text-decoration: none;
+        margin-top: 60px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+    }
+    &__back{
+        display: none;
+        width: 100%;
+        height: 422px;
+        opacity: 0.96;
+        background-color: #6df6eb;
+        padding-top: 65px;
+        padding-left: 65px;
+       
+    }
+    .black{
+        color: #000000;
+    }
+    .active{
+        display: block;
+    }
+  .small{
+      width: 474px;
+      height: 422px;;
+  }
 }
+

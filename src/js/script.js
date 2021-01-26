@@ -22,7 +22,10 @@ window.addEventListener('DOMContentLoaded', function(){
         }
 
         slides.forEach(item => item.style.display = 'none');
-        slides[slideIndex - 1].style.display = 'flex'
+        slides[slideIndex - 1].style.display = 'flex';
+        
+        
+        
     }
     
     function plusSlides (n) {
@@ -31,8 +34,9 @@ window.addEventListener('DOMContentLoaded', function(){
 
     prev.addEventListener('click', function(){
         plusSlides(-1);
+        
         dots.forEach(dot => dot.style.backgroundColor = '#d0d0d0');
-        dots[slideIndex - 1].style.backgroundColor = '#6eeee4'
+        dots[slideIndex - 1].style.backgroundColor = '#6eeee4';
     });
 
     next.addEventListener('click', function(){
@@ -63,7 +67,7 @@ window.addEventListener('DOMContentLoaded', function(){
         width: 11px;
         height: 10px;
         background-color: #d0d0d0;
-        border-radius: 3px;
+        border-radius: 50%;
         margin-right: 2px;
         transition: .2s all;
         `;
@@ -110,7 +114,38 @@ window.addEventListener('DOMContentLoaded', function(){
         };
     })
     
-    
+    // =========
 
-        
+    const fontsBlock = document.querySelectorAll('.services__font'),
+          backBlock = document.querySelectorAll('.services__back'),
+          parentBlock = document.querySelector('.services__wrapper'),
+          blockTrigger = document.querySelectorAll('.services__toggle');
+
+    function showHideBlock(i){
+        fontsBlock.forEach((font) =>{
+            font.classList.toggle('active')
+        })
+        backBlock.forEach((back) =>{
+            back.classList.toggle('active')
+        })
+    }
+   
+
+    blockTrigger.forEach((item) =>{
+        item.addEventListener('click', function(e){
+            e.preventDefault();
+            showHideBlock();
+        })
+    })
+
+
+    // Burger Menu
+
+    const burger = document.querySelector('.main__burger');
+    const menu = document.querySelector('.hide__menu');
+
+    burger.addEventListener('click', ()=>{
+        burger.classList.toggle('main__burger-active');
+        menu.classList.toggle('hide__menu-active');
+    })
 });
