@@ -6,6 +6,7 @@
     &__slider{
         padding-top: 173px;
         position: relative;
+        transition: 0.5s all;
        &-item{
            display: flex;
            justify-content: space-between;
@@ -16,6 +17,7 @@
     &__block{
         position: relative;
         z-index: 1;
+
         img{
             display: block;
             width: 319px;
@@ -23,6 +25,7 @@
             z-index: 1;
             margin-left: 37px;
         }
+
     
     }
     &__grey{

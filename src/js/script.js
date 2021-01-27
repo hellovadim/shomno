@@ -10,22 +10,22 @@ window.addEventListener('DOMContentLoaded', function(){
           next = document.querySelector('.says__btn-next'),
           slider = document.querySelector('.says__slider');
     let slideIndex = 1;
-    
-    showSlides(slideIndex);
 
-    function showSlides (n) {
-        if(n > slides.length){
-            slideIndex = 1;
-        }
-        if (n < 1){
-            slideIndex = slides.length
-        }
+        showSlides(slideIndex);
 
-        slides.forEach(item => item.style.display = 'none');
+        function showSlides (n) {
+            if(n > slides.length){
+                slideIndex = 1;
+                }
+            if (n < 1){
+                 slideIndex = slides.length
+                }
+
+        slides.forEach((item )=> {
+            item.style.display = 'none';
+        });
         slides[slideIndex - 1].style.display = 'flex';
-        
-        
-        
+  
     }
     
     function plusSlides (n) {
@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', function(){
         position: absolute;
         left: -45px;
         bottom: -4px;
-        z-index: 15;
+        z-index: 10;
         display: flex;
         justify-content: center;
         margin-right: 15%;
@@ -118,10 +118,11 @@ window.addEventListener('DOMContentLoaded', function(){
 
     const fontsBlock = document.querySelectorAll('.services__font'),
           backBlock = document.querySelectorAll('.services__back'),
-          parentBlock = document.querySelector('.services__wrapper'),
+          itemBlock = document.querySelectorAll('.services__item'),
           blockTrigger = document.querySelectorAll('.services__toggle');
 
-    function showHideBlock(i){
+
+    function showHideBlock(){
         fontsBlock.forEach((font) =>{
             font.classList.toggle('active')
         })
@@ -131,21 +132,24 @@ window.addEventListener('DOMContentLoaded', function(){
     }
    
 
-    blockTrigger.forEach((item) =>{
-        item.addEventListener('click', function(e){
-            e.preventDefault();
-            showHideBlock();
-        })
-    })
+//     
 
 
     // Burger Menu
 
-    const burger = document.querySelector('.main__burger');
-    const menu = document.querySelector('.hide__menu');
+    const burger = document.querySelector('.main__burger'),
+          menu = document.querySelector('.hide__menu'),
+          menuItems = document.querySelectorAll('.hide__menu-links');
 
     burger.addEventListener('click', ()=>{
         burger.classList.toggle('main__burger-active');
         menu.classList.toggle('hide__menu-active');
+        
+    })
+    menuItems.forEach((links)=>{
+        links.addEventListener('click', ()=>{ 
+            burger.classList.toggle('main__burger-active');
+            menu.classList.toggle('hide__menu-active');
+        })
     })
 });
