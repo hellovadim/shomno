@@ -9,6 +9,13 @@
     }
     &__items{
         display: block;
+       
+    }
+    &__img{
+        transition: 0.5s all;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     &__link{
         text-decoration: none;

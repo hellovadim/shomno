@@ -68,13 +68,14 @@
         cursor: pointer;
     }
     &__back{
-        display: none;
+        display: block;
         width: 100%;
+        overflow: hidden;
         height: 422px;
         opacity: 0.96;
         background-color: #6df6eb;
         padding-top: 65px;
-        padding-left: 65px;
+        
        
     }
     .black{

@@ -1,5 +1,3 @@
-
-
 window.addEventListener('DOMContentLoaded', function(){
 
     
@@ -152,4 +150,24 @@ window.addEventListener('DOMContentLoaded', function(){
             menu.classList.toggle('hide__menu-active');
         })
     })
+
+    // Prompt team
+
+    const teamBlocks = document.querySelectorAll('.team__items'),
+          promptBlocks = document.querySelectorAll('.team__prompt');
+          
+
+    for(let i = 0; i < teamBlocks.length; i++){
+        teamBlocks[i].addEventListener('mouseover', ()=>{
+            let show = promptBlocks[i];
+            show.style.transition = '0.5s all';
+            show.style.opacity = '1';
+        })
+        teamBlocks[i].addEventListener('mouseout', ()=>{
+            let show = promptBlocks[i];
+            show.style.transition = '0.5s all';
+            show.style.opacity = '0';
+        })
+    }
+
 });
