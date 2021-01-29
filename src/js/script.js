@@ -112,20 +112,31 @@ window.addEventListener('DOMContentLoaded', function(){
         };
     })
     
-    // =========
+    // Services
 
-    const fontsBlock = document.querySelectorAll('.services__font'),
-          backBlock = document.querySelectorAll('.services__back'),
-          itemBlock = document.querySelectorAll('.services__item'),
-          blockTrigger = document.querySelectorAll('.services__toggle');
+    const blockTrigger = document.querySelectorAll('.services__toggle');
 
 
-    function showHideBlock(){
-        fontsBlock.forEach((font) =>{
-            font.classList.toggle('active')
-        })
-        backBlock.forEach((back) =>{
-            back.classList.toggle('active')
+    for (trigger of blockTrigger){
+        trigger.addEventListener('click', function(){
+            let block = this.closest('.services__item');
+            let fontBlock = block.querySelector('.services__font');
+            let backBlock = block.querySelector('.services__back');
+           
+            if (backBlock.classList.contains('hide')){
+                backBlock.classList.remove('hide');
+                backBlock.classList.add('active');
+                fontBlock.classList.add('hide');
+                this.innerHTML = '&#10006;';
+                this.classList.add('close');
+            }else{
+                fontBlock.classList.remove('hide');
+                fontBlock.classList.add('active');
+                backBlock.classList.add('hide');
+                backBlock.classList.remove('active');
+                this.innerHTML = 'know more &rarr;'
+                this.classList.remove('close');
+            }
         })
     }
    

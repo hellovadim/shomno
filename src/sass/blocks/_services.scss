@@ -13,15 +13,12 @@
         width: 652px;
         height: 422px;
         overflow: hidden;
-        
-        
     }
     &__font{
         display: none;
-        width: 100%;
+        width:100%;
         height: 422px;
         padding-top: 165px;
-        padding-left: 65px;
         &-1{
             background: url('../img/section_4/tea2.jpg') center (center/cover) no-repeat;
         }
@@ -56,6 +53,9 @@
         color: #ffffff;
     }
     &__toggle{
+        position: absolute;
+        bottom: 58px;
+        left: 67px;
         opacity: 0.76;
         font-family: 'Raleway';
         font-size: 19px;
@@ -68,25 +68,29 @@
         cursor: pointer;
     }
     &__back{
+        position: relative;
         display: block;
         width: 100%;
-        overflow: hidden;
         height: 422px;
         opacity: 0.96;
         background-color: #6df6eb;
-        padding-top: 65px;
-        
-       
+        padding-top: 65px; 
     }
     .black{
         color: #000000;
     }
     .active{
-        display: block;
+       display: block;
+    }
+    .hide{
+       display: none;
     }
   .small{
       width: 474px;
       height: 422px;;
+  }
+  .close{
+    color: #000000;
   }
 }
 
