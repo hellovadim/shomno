@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
         slides.forEach((item )=> {
             item.style.display = 'none';
+            item.classList.add('animate__animated', 'animate__backInDown')
         });
         slides[slideIndex - 1].style.display = 'flex';
   
@@ -79,23 +80,41 @@ window.addEventListener('DOMContentLoaded', function(){
     // Images
 
     const imgPopup = document.createElement('div'),
+          closeImg = document.createElement('p'),
           workSection = document.querySelector('.works__wrapper'),
           bigImage = document.createElement('img');
 
-    imgPopup.classList.add('popup', 'animated-show');
+    function closeImage(){
+        imgPopup.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    imgPopup.classList.add('popup','animate__animated', 'animate__fadeInUp'/* 'animated-show' */);
     workSection.appendChild(imgPopup);
 
     imgPopup.style.cssText = `
-    justify-content: center;
-    align-items: center;
-    display: none;`
+        justify-content: center;
+        align-items: center;
+        display: none;`
+    closeImg.style.cssText = `
+        position : absolute;
+        top: 26%;
+        right: 37%;
+        color: #d1d1d1;
+        cursor: pointer;
+        font-size: 36px;    
+    `
+    
+    closeImg.innerHTML = '&#10006;';
+    
 
     bigImage.style.cssText = `
-    width: 40%;
-    height: 60%;`
+        width: 20%;
+        height: 30%;`
     
     imgPopup.appendChild(bigImage);
-
+    imgPopup.appendChild(closeImg);
+    
     workSection.addEventListener('click', (e)=>{
 
         e.preventDefault();
@@ -106,10 +125,14 @@ window.addEventListener('DOMContentLoaded', function(){
             imgPopup.style.display = 'flex';
             const path = target.parentNode.getAttribute('href');
             bigImage.setAttribute('src', path);
+            document.body.style.overflow = 'hidden';
         };
         if (target && target.matches('div.popup')){
-            imgPopup.style.display = 'none';
+            closeImage();
         };
+    })
+    closeImg.addEventListener('click', ()=>{
+        closeImage();
     })
     
     // Services
@@ -125,13 +148,13 @@ window.addEventListener('DOMContentLoaded', function(){
            
             if (backBlock.classList.contains('hide')){
                 backBlock.classList.remove('hide');
-                backBlock.classList.add('active');
-                fontBlock.classList.add('hide');
+                backBlock.classList.add('active','animate__animated', 'animate__fadeInRight');
+                fontBlock.classList.add('hide')
                 this.innerHTML = '&#10006;';
                 this.classList.add('close');
             }else{
                 fontBlock.classList.remove('hide');
-                fontBlock.classList.add('active');
+                fontBlock.classList.add('active', 'animate__animated', 'animate__fadeInLeft');
                 backBlock.classList.add('hide');
                 backBlock.classList.remove('active');
                 this.innerHTML = 'know more &rarr;'

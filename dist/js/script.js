@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function(){
 
     
-    // Slider
+    // // Slider
 
     const slides = document.querySelectorAll('.says__slider-item'),
           prev = document.querySelector('.says__btn-prev'),
@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function(){
           workSection = document.querySelector('.works__wrapper'),
           bigImage = document.createElement('img');
 
-    imgPopup.classList.add('popup', 'animated-show');
+    imgPopup.classList.add('popup','animate__animated', 'animate__bounceIn'/* 'animated-show' */);
     workSection.appendChild(imgPopup);
 
     imgPopup.style.cssText = `

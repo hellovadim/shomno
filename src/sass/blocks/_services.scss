@@ -6,6 +6,7 @@
         margin-top: 123px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item{
         position: relative;
@@ -13,6 +14,7 @@
         width: 652px;
         height: 422px;
         overflow: hidden;
+        transition: 0.5s all;
     }
     &__font{
         display: none;
@@ -20,10 +22,22 @@
         height: 422px;
         padding-top: 165px;
         &-1{
-            background: url('../img/section_4/tea2.jpg') center (center/cover) no-repeat;
+            background: url('../img/section_4/layers.jpg') center (center/cover) no-repeat;
         }
         &-2{
             background: url('../img/section_4/note.jpg') center (center/cover) no-repeat;
+        }
+        &-3{
+            background: url('../img/section_4/pc.jpg') center (center/cover) no-repeat;
+        }
+        &-4{
+            background: url('../img/section_4/office.jpg') center (center/cover) no-repeat;
+        }
+        &-5{
+            background: url('../img/section_4/bottle.jpg') center (center/cover) no-repeat;
+        }
+        &-6{
+            background: url('../img/section_4/cups.jpg') center (center/cover) no-repeat;
         }
         &::before{
             content: '';
@@ -43,6 +57,7 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: #ffffff;
+        margin-left: 65px;
     }
     &__text{
         opacity: 0.9;
@@ -51,6 +66,8 @@
         font-weight: 400;
         letter-spacing: 0.02em;
         color: #ffffff;
+        margin-top: 27px;
+        margin-left: 65px;
     }
     &__toggle{
         position: absolute;
@@ -77,6 +94,7 @@
         padding-top: 65px; 
     }
     .black{
+        margin-right: 116px;
         color: #000000;
     }
     .active{
@@ -90,7 +108,11 @@
       height: 422px;;
   }
   .close{
+    font-size: 23px;
     color: #000000;
+  }
+  .mt{
+      margin-top: 12px;
   }
 }
 
