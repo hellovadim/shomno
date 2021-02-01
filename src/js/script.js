@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function(){
 
     
-    // Slider
+    // // Slider
 
     const slides = document.querySelectorAll('.says__slider-item'),
           prev = document.querySelector('.says__btn-prev'),
