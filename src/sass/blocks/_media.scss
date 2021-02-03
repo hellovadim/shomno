@@ -1,0 +1,174 @@
+@media (max-width: 1145px) {
+    .main{
+      padding-left: 30px;
+      padding-right: 30px;
+      &__burger{
+        right: 5%;
+
+    }
+    &__descr{
+        font-size: 36px;
+    }
+    &__contact{
+        width: 219px;
+        font-size: 16px;
+    }
+    &__icon{
+        display: none;
+    }
+    }
+    .title{
+        font-size: 35px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    .about {
+        padding-top: 110px;
+        padding-right: 44px;
+        &__block{
+            width: 460px;
+            left: 30px;
+            height: 367px;
+            top: 48px;
+        }
+        &__title{
+            font-size: 18px;
+        }
+        &__text{
+            font-size: 14px;
+            br{
+                display: none;
+            }
+        }
+    }
+    .works{
+        &__wrapper{
+            justify-content: center;
+        }
+        &__item{
+           margin-right: 12px;
+       }
+    }
+    .services{
+        &__wrapper{
+            justify-content: center;
+        }
+        &__item{
+            width: 40%;
+            margin-right: 5px;
+            
+        }
+        .small{
+            width: 40%;
+        }
+        &__title{
+            font-size: 18px;
+        }
+        &__text{
+            letter-spacing: 0;
+            font-size: 15px;
+            text-align: left;
+            margin-left: 29px;
+        }
+    }
+    .team{
+        &__wrapper{
+            justify-content: center;
+        }
+        &__items{
+            margin-right: 8px;
+            margin-top: 8px;
+        }
+    }
+    .says{
+        &__slider{
+            display: flex;
+            flex-direction: column;
+        }
+        &__slider-item{
+            flex-wrap: wrap;
+            justify-content: center;
+           
+        }
+        &__block{
+            margin-right: 15px;
+            img{
+            display: block;
+            width: 300px;
+            height: 366px;
+            z-index: 1;
+            margin-left: 0;
+            }
+        }
+        &__grey{
+            left: -9px;
+            width: 318px;
+            z-index: -1;
+            height: 326px;
+        }
+        &__descr{
+            margin-top: 10px;
+            width: 46%;
+            height: 36%;
+            padding-top: 68px;
+            padding-left: 82px;
+            padding-right: 69px;
+        }
+        &__text{
+            font-size: 13px;
+            margin-top: 18px;
+            margin-bottom: 25px;
+        }
+        &__title{
+            font-size: 18px;
+          
+        }
+        &__stars{
+            margin-bottom: 17px;
+        }
+        .indicators{
+            position: relative;
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+            margin-right: 64px;
+        }
+        &__arrows{
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+    }
+    .partners{
+      
+        &__block{
+            padding: 23px 23px;
+        }
+        &__link{
+            img{
+                display: block;
+                width: 106px;
+            }
+        }
+    }
+    .contact{
+        min-height: 516px;
+        padding-top: 27px;
+        &__wrapper{
+            justify-content: center;
+        }
+        &__forms{
+            width: 30%;
+            margin-right: 5px;
+        }
+        &__address{
+            width: 30%;
+            margin-left: 5px;
+        }
+    }
+    .pageup{
+        width: 46px;
+        right: 4%;
+    }
+
+}

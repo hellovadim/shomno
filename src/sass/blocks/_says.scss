@@ -116,4 +116,15 @@
     .icon-chevron-right{
         font-size: 36px;
     }
+    .indicators{
+        position: absolute;
+        left: -45px;
+        bottom: -4px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
+    }
 }

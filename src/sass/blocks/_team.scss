@@ -7,11 +7,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .mt{
-        margin-top: 14px;
-    }
+    
     &__items{
         position: relative;
+        margin-top: 14px;
         &:hover{
         box-shadow: 10px 6px 16px 0px rgba(48, 48, 68, 0.57);
         }

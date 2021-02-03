@@ -5,8 +5,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
     const slides = document.querySelectorAll('.says__slider-item'),
           prev = document.querySelector('.says__btn-prev'),
-          next = document.querySelector('.says__btn-next'),
-          slider = document.querySelector('.says__slider');
+          next = document.querySelector('.says__btn-next');
     let slideIndex = 1;
 
         showSlides(slideIndex);
@@ -44,21 +43,8 @@ window.addEventListener('DOMContentLoaded', function(){
         dots[slideIndex - 1].style.backgroundColor = '#6eeee4'
     });
    
-    const indicators = document.createElement('ol'),
+    const indicators = document.querySelector('.indicators'),
           dots = [];
-    indicators.classList.add('carousel-indicators');
-    indicators.style.cssText = `
-        position: absolute;
-        left: -45px;
-        bottom: -4px;
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        margin-right: 15%;
-        margin-left: 15%;
-        list-style: none;
-    `; 
-    slider.append(indicators);
     for (let i = 0; i < slides.length; i++) {
         const dot = document.createElement('li');
         dot.setAttribute('data-slide-to', i + 1);
@@ -69,6 +55,7 @@ window.addEventListener('DOMContentLoaded', function(){
         border-radius: 50%;
         margin-right: 2px;
         transition: .2s all;
+        cursor: pointer;
         `;
         if (i == 0) {
             dot.style.backgroundColor = '#6eeee4'

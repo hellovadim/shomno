@@ -14,9 +14,8 @@
  .hide{
     display: none;
  }
-// body{
-//     position: relative;
-// }
+
+
 @import 'blocks/hide-menu';
 @import 'blocks/main';
 @import 'blocks/about';
@@ -31,3 +30,4 @@
 @import 'blocks/footer';
 @import 'blocks/animations';
 @import 'blocks/pageUp';
+@import 'blocks/media';

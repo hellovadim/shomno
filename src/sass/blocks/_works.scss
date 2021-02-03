@@ -7,11 +7,12 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    &__items{
+    &__item{
         display: block;
-       
+        margin-top: 13px;
     }
     &__img{
+        display: block;
         transition: 0.3s ease-in;
         position: relative;
         &:hover{
@@ -21,11 +22,10 @@
         
     }
     &__link{
+        display: block;
         text-decoration: none;
     }
-    .mt{
-        margin-top: 13px;
-    }
+    
     .popup{
         display: none;
         position: fixed;
