@@ -64,6 +64,8 @@ window.addEventListener('DOMContentLoaded', function(){
         dots.push(dot);
     };
 
+  
+
     // Images
 
     const imgPopup = document.createElement('div'),
