@@ -170,5 +170,73 @@
         width: 46px;
         right: 4%;
     }
+    .contact{
+        iframe{
+            width: 223px;
+        }
+    }
 
+}
+@media (max-width : 989px){
+    .main{
+        &__descr{
+            font-size: 29px;
+        }
+        &__contact{
+            width: 207px;
+            font-size: 14px;
+        }
+        &__burger{
+            width: 31px;
+        }
+    }
+    .title{
+        font-size: 32px;
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+    .about{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__block{
+            left: 25%;
+        }
+        
+        &__descr{
+            margin-top: 43px;
+        }
+        &__title{
+            text-align: center;
+            font-size: 16px;
+        }
+        &__text{
+            text-align: center;
+
+        }
+    }
+    .services{
+        &__wrapper{
+            margin-top: 81px;
+        }
+        &__item{
+            img{
+                width: 100%;
+            }
+        }
+
+        &__title{
+            margin-left: 31px;
+        }
+        &__text{
+            margin-left: 22px;
+        }
+        &__toggle{
+            left: 24px;
+            font-size: 16px;
+        }
+    }
+   
 }
